@@ -9,4 +9,89 @@ body {
   padding: 0;
 }
 
-/* Add styles here! */
+header {
+  padding: 64px 48px 0;
+}
+
+.max-width-wrapper {
+  margin: 0 auto;
+  max-width: 750px;
+}
+
+.intro-chunk {
+  margin-left: 36px;
+  max-width: 350px;
+  padding: 24px 32px;
+}
+
+.intro-chunk strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+main {
+  background-color: hsl(0deg, 0%, 60%);
+  border-top: 4px solid hsl(0deg, 0%, 40%);
+}
+
+main > section {
+  padding: 48px;
+}
+
+.card {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 8px 12px;
+}
+
+.card .indented-heading {
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 4px solid hsl(45deg, 100%, 40%);
+  margin: 0;
+  margin-left: -24px;
+  padding: 12px 34px;
+  width: fit-content;
+}
+
+.card > p {
+  padding: 12px;
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  header {
+    padding-left: 0;
+  }
+
+  .max-width-wrapper {
+    max-width: none;
+  }
+
+  .intro-chunk {
+    margin-left: 0;
+    padding-left: 24px;
+  }
+
+  main > section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .card {
+    border-bottom: 4px solid hsl(0deg, 0%, 40%);
+  }
+}
+
+/* phone */
+@media screen and (max-width: 420px) {
+  main > section {
+    padding-bottom: 0;
+  }
+
+  .card {
+    border-bottom: none;
+    padding-right: 0;
+  }
+
+  .card > p {
+    display: none;
+  }
+}
